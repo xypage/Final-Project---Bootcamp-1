@@ -1,0 +1,363 @@
+div, body, nav, ul, li {
+  margin:0px;
+}
+/* Start nav */
+nav, #hide, .chevron, .nav-links, .logo, .links {
+  list-style:none;
+  transition-timing-function: ease;
+  transition:all 1s;
+}
+
+h1 {
+  margin:60px;
+}
+#nav-links {
+  visibility:hidden;
+}
+.main-nav {
+  z-index:10;
+  width:20px;
+  background:#333;
+  position:fixed;
+  top: 35%;
+  height:20em;
+}
+#hide {
+  position:relative;
+  visibility:visible;
+  float:right;
+  background-color:#555;
+  opacity:1;
+  height:5.2em;
+  width:1.5em;
+  top:7em;
+  left:1.5em;
+}
+.chevron {
+  position:relative;
+  top:.1em;
+  height:5em;
+  width:1.7em;
+}
+.logo {
+  height:70px;
+  margin:11px -5px 20px;
+  width:0px;
+}
+#links {
+  position:relative;
+  left:-20px;
+  color:#F2F2F2;
+  font-size:0px;
+  margin-bottom:30px;
+  margin-left:0px;
+  margin-top:20px;
+}
+.main-nav:hover #hide, .main-nav:hover .chevron {
+  width:0px;
+  opacity:0;
+  left:0em;
+  transition:all 1s;
+}
+.main-nav:hover #nav-links {
+  visibility:visible;
+  list-style:none;
+  padding:16px;
+}
+.main-nav:hover {
+  width:140px;
+  transition:width 1s;
+}
+.main-nav:hover .logo {
+  width:70%;
+}
+.main-nav:hover #links {
+  position:static;
+  left:0px;
+  font-size:18px;
+  margin-top:0px;
+  margin-left:20px;
+  transition:all 1s;
+}
+/* End nav */
+
+/* Header */
+.top-bar {
+  margin:0px;
+  height:70px;
+  width:100%;
+  background-color:#303030;
+}
+.page-title {
+  color:white;
+  text-align:center;
+  position:relative;
+  top:16.5px;
+  margin:0px;
+}
+/* End header */
+
+/* Gif banner */
+.banner-gif {
+  margin:10px 10px 20px;
+  height:500px;
+  background-image: url("../img/xwing_gif.gif");
+  background-position:center;
+  background-position-y:-50px;
+  background-size:cover;
+}
+.banner-text-bg {
+  padding-top:225px;
+  text-align:center;
+}
+.banner-text {
+  display:inline-block;
+  background-color:rgba(0,0,0,.25);
+  color:#FFF;
+  margin:.5em;
+  font-family:'Kumar One Outline', cursive;
+  padding:2px 10px 0px;
+}
+/* End gif banner */
+
+/* Divider */
+.divider-container {
+  margin:40px 10px; 
+}
+.line {
+  float:left;
+  width:45.5%;  
+  height:5px;
+  background-color:black;
+  border-radius:100%;
+  position:relative;
+  top:.65vw;
+}
+.l-line-block, .r-line-block {
+  background-color:black;
+  width:22.75%;
+  height:5px;
+  position:relative;
+}
+.l-line-block {float:left;}
+.r-line-block {float:right;}
+.m-circles {
+  float:left;
+  margin:0px 2%;
+  width:5%;
+  height:20px;
+}
+.l-circle, .m-circle, .r-circle {
+  border-radius:100%;
+  background-color:black;
+  height:0;
+  padding:30% 0px 0px;
+  width:30%;
+  margin:1px 2.5%;
+  float:left;
+}
+.m-circle{margin:1px 0px;}
+/* End of divider */
+
+/* Beginning of blocks */
+.fancy {
+  font-family:'Great Vibes', cursive;
+  font-size:3em;
+  line-height:calc(100%/3)
+}
+.block-container {
+  margin:120px 10px 20px;
+  height:750px;
+  border:solid #444 medium;
+  background-color:#737373;
+  padding:0px;
+}
+.block {
+  height:300px;
+  width:45%;
+  border-radius:20%;
+  border:solid #222221 thick;
+}
+.b-top {
+  width:700px;
+  margin:50px auto 50px;
+}
+.left-text {
+  width:200.5px;
+  height:280px;
+  margin:30px 5px 10px 10px;
+  float:left;
+}
+.right-text{margin-top:30px;}
+.vader {
+  float:left;
+}
+.b-left {
+  float:left;
+  margin:0px calc(9%/3) 50px;
+  display:flex;
+}
+.rep-container {
+  flex:1;
+  margin:10px 5px 10px 10px;
+}
+.republic {
+  height:280px;
+  width:280px;
+}
+.f-left {  
+  height:300px;
+  margin:40px 10px 10px 0px;
+}
+.b-right {
+ display:flex;
+ margin:0px calc(9%/3) 50px 0px;
+}
+.f-right {
+  height:300px;
+  margin:40px 5px 10px 10px;
+  flex:1;
+}
+.rebel {
+  height:280px;
+  width:280px;
+}
+.reb-container {
+  margin:10px 10px 10px 0px;
+}
+/* End of blocks */
+
+/* Tragedy */
+.tragedy {
+  margin: 120px 10px 20px;
+  border:solid #444 medium;
+  background-color:#737373;
+  text-align:center;
+}
+.trag-text {
+  font-size:2em;
+}
+/*End tragedy */
+
+/* footer */
+footer {
+    margin-top:25px ;
+    height:150px;
+    border-top:1px solid #000;
+    width:100%;
+    background-color:#333;
+}
+.footer-section {
+    width:33%;
+    height:100%;
+    float:left;
+}
+.mid-footer {
+    border-right:1px solid black;
+    border-left:1px solid black;
+}
+.footer-logo {
+    height:70px;
+    margin-left:40%;
+    margin-top:40px;
+}
+.social-media {
+  height: 100%;
+  width: 150px;
+  margin:0px auto;
+}
+.section {
+  height: 50px;
+}
+.icon {
+  height: 100%;
+  width: 50px;
+  text-align:center;
+  margin-left: calc(100%/3);
+  background:radial-gradient(white, #333, #333);
+  border-radius:100%;
+}
+
+.icon.left {
+  float: left;
+  margin-left: 0px;
+}
+
+.icon.right {
+  float: right;
+  margin-left: 0px;
+}
+.icon .fa {
+    font-size:24px;
+    margin-top:12.5px;
+}
+.copyright {
+    width:280px;
+    margin:55px auto 0px;
+    color:#DDD;
+}
+.right-footer {
+  text-align:center; 
+}
+/* End Footer */
+
+/* Map */
+.map-container {
+  height:450px;
+  margin:10px;
+}
+/*End map */
+
+/* Begin Star Wars about */
+.a-columns {
+    background-color:#737373;
+    height:400px;
+    margin:120px 10px 20px;
+    display:flex;
+}
+.a-img, .a-bio {
+    margin:0;
+    padding:0;
+    float:left;
+}
+.a-img {
+    flex:1;
+}
+.a-bio {
+    text-align:center;
+    margin:160px auto 0px;
+}
+/* End star wars thing */
+
+/* Form */
+.form-container {
+  margin:20px 10px;
+  border:dashed #737373 thick;
+}
+/* End form */
+
+/* Personal info */
+.info-container {
+ margin:120px 10px 20px; 
+ border:solid #222221 thick;
+ background-color:#737373;
+ height:200px;
+}
+.personal-info, .business-info {
+  width:45%;
+  height:175px;
+  border:solid black thin;
+  float:left;
+  text-align:center;
+}
+.personal-info {
+  margin:12.5px calc(9%/3) 12.5px;
+}
+.business-info {
+  margin:12.5px calc(9%/3) 12.5px 0px;
+}
+.short {
+  line-height:50%;
+  font-size:1.3em;
+}
+/* End personal info */
