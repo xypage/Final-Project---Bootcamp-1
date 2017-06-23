@@ -325,7 +325,7 @@ footer {
 }
 .a-bio {
     text-align:center;
-    margin:160px auto 0px;
+    margin:130px auto 0px;
 }
 /* End star wars thing */
 
@@ -361,3 +361,24 @@ footer {
   font-size:1.3em;
 }
 /* End personal info */
+
+/* Easter egg */
+.easter, .easter-p {
+  transition:all 1s;
+}
+.easter {
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+.easter-p {
+  height:16px;
+}
+.easter:hover .easter-p {
+  height:64px;
+}
+.easter:hover .easter {
+  bottom:24;
+  right:24;
+}
+/* End easter egg */
